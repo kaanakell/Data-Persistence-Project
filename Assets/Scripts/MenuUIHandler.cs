@@ -16,19 +16,19 @@ public class MenuUIHandler : MonoBehaviour
     public InputField input;
 
 
-    private void Start()
+     void Start()
     {
         SecondManager.Instance.LoadHighScore();
 
         newName = SecondManager.Instance.newName;
         highScore = SecondManager.Instance.highScore;
 
-        if(SecondManager.Instance.highScore != 0)
+        /*if(SecondManager.Instance.highScore != 0)
         {
             highScoreText.text = "Best Score : " + newName + " : " + highScore;
 
             Debug.Log(Application.persistentDataPath);
-        }
+        }*/
     }
 
     /*public void NewNameSelected(string name)
